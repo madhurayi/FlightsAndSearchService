@@ -1,4 +1,4 @@
-# Welcome to floghts service
+# Welcome to flights service
 
 ## Project setup
 
