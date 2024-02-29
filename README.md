@@ -20,6 +20,9 @@
 }
 ```
 - Once you have added your db config as listed above, go tp the src folder from your terminal and execute `npm sequelize db:create`
+and then execute
+
+`npm sequelize db:migrate`
 
 ##DB Design
     - Airplane Table

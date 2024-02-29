@@ -1,7 +1,6 @@
 const express=require('express');
 const bodyParser=require('body-parser');
 const { PORT } = require('./config/serverConfig');
-const cityrepository= require('./repository/city-repository');
 const CityRepository = require('./repository/city-repository');
 
 const setupAndStartServer= async()=>{
