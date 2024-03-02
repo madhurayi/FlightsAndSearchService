@@ -22,7 +22,13 @@
 - Once you have added your db config as listed above, go tp the src folder from your terminal and execute `npm sequelize db:create`
 and then execute
 
-`npm sequelize db:migrate`
+- To create Airport table run ` npx sequelize model:generate --name Airport --attributes name:String,address:String,cityId:integer`
+
+- And run `npx sequelize db:migrate` to connect with the database.
+
+- To create a seeder run ` npx sequelize seed:generate --name add-airports`
+
+-And run `npx sequelize db:seed:all` to seed the data
 
 ##DB Design
     - Airplane Table
@@ -32,3 +38,9 @@ and then execute
  - A flight belongs to an airplane but one airplane can be used in multiple flights.
   - A city has many airports but one airport belongs to one city.
    - One airport can have many flights, but a flight belongs to one airport.
+
+## Tables
+
+### City -> id, name, crated_at, updated_at
+### Airport -> id, name, address, city_id, created_at, updated_at
+    Relationship -> City has many Airports and Airport belongs to one city (one to many )
